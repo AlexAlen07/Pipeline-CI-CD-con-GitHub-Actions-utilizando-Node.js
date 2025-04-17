@@ -12,10 +12,4 @@ app.get('/', (req, res) => {
 
 const port = process.env.PORT || 5002;
 
-if (require.main === module) {
-  app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
-  });
-}
-
-module.exports = app;
+app.listen(PORT, () => console.log(`Servidor en puerto ${PORT}`));

@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "start": "node src/app.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
