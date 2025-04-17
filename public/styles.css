@@ -1,0 +1,30 @@
+/* Fondo oscuro y texto centrado */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* gris oscuro / casi negro */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* altura completa de la ventana */
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+  /* Emoji giratorio */
+.earth {
+    display: inline-block;
+    animation: spin 4s linear infinite;
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
