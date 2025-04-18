@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI/CD Pipeline
 
 on:
   push:
@@ -27,3 +27,8 @@ jobs:
 
     - name: Ejecutar pruebas
       run: npm test
+
+    - name: Desplegar en Render
+      run: |
+        curl -X POST https://api.render.com/deploy/srv-d00pnii4d50c73cifp8g \
+        -H 'Authorization: Bearer ${{ secrets.RENDER_API_KEY }}'
