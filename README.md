@@ -1,6 +1,6 @@
 # Proyecto Node.js con Pipeline CI/CD usando GitHub Actions
 
-Este proyecto es una aplicación web simple construida con **Node.js** y **Express**, que utiliza un **pipeline CI/CD** en **GitHub Actions** para automatizar pruebas y despliegue. La aplicación muestra el mensaje **"Bienvenidos al Mundo DevOps! 🌍"** y un icono de mundo giratorio.
+Este proyecto es una aplicación web simple construida con **Node.js**, **Express** y **Jest**, que utiliza un **pipeline CI/CD** en **GitHub Actions** para automatizar pruebas y despliegue. La aplicación muestra el mensaje **"Bienvenidos al Mundo DevOps! 🌍"** y un icono de mundo giratorio.
 
 ## Índice
 
@@ -56,28 +56,6 @@ npm start
 ```
 
 La aplicación estará disponible en http://localhost:5002
-
-Estructura del Proyecto
-El proyecto tiene la siguiente estructura de carpetas:
-
-project-node-ci-cd/
-│
-├── .github/
-│   └── workflows/
-│       └── ci.yml            # Configuración del pipeline CI/CD
-├── node_modules/              # Dependencias instaladas
-├── public/                    # Archivos estáticos (CSS, JS, imágenes)
-├── src/                       # Código fuente de la app
-│   └── app.js                 # Archivo principal de la app
-│   └── ...
-├── tests/                     # Pruebas unitarias
-│   └── sample.test.js         # Ejemplo de prueba con Jest
-├── views/                     # Vistas EJS
-│   └── index.ejs              # Página principal
-├── .gitignore                 # Archivos que deben ser ignorados por Git
-├── package.json               # Dependencias y scripts de npm
-├── README.md                  # Documentación del proyecto
-└── jest.config.js             # Configuración de Jest para pruebas
 
 ## Pipeline CI/CD
 
