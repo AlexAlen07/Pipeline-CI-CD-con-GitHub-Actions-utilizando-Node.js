@@ -21,6 +21,9 @@ jobs:
 
     - name: Instalar dependencias
       run: npm install
+    
+    - name: Set PORT environment variable
+      run: echo "PORT=5002" >> $GITHUB_ENV
 
     - name: Ejecutar pruebas
       run: npm test
